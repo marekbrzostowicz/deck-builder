@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansation&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: "Sansation", cursive;
+  }
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #7c3aed;
+    border-radius: 9999px;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #a855f7;
+  }
+}
