@@ -110,7 +110,7 @@ const MainLayout = () => {
 
   const handleDeleteCard = (id: number) => {
     const emptySlotIndex = deck.findIndex((card) => card.id === id);
-    deck.filter((card) => card.id !== id);
+    // deck.filter((card) => card.id !== id);
 
     setDeck((prevDeck) => {
       const newDeck = [...prevDeck];
@@ -130,10 +130,7 @@ const MainLayout = () => {
           />
 
           <div className="bg-[#2b1c0d] border border-amber-800/50 rounded-3xl flex flex-col items-center justify-between py-8">
-            <h2
-              className="text-3xl font-black max-w-11/12 w-full flex  justify-center text-indigo-300 bg-gradient-to-tr  from-orange-950 via-yellow-950 
-             to-amber-950 border border-amber-800 py-1 rounded-2xl"
-            >
+            <h2 className="text-3xl font-black max-w-11/12 w-full flex  justify-center text-indigo-300 bg-gradient-to-tr  from-orange-950 via-yellow-950 to-amber-950 border border-amber-800 py-1 rounded-2xl">
               Deck
             </h2>
             <div
